@@ -1,0 +1,130 @@
+body {
+    text-align: center
+}
+
+#logo {
+    display: block;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 1200px;
+}
+
+#pierwszy {
+    background-color: burlywood;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+#drugi {
+    background-color: lightblue;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+#main-div {
+    position: relative;
+}
+
+#super {
+    background-color: lightsalmon;
+    width: 200px;
+    position: absolute;
+    top: 35px;
+    left: 580px;
+}
+
+table {
+    font-weight: 200;
+    border: 3px;
+    border-style: double;
+    border-collapse: collapse;
+    text-align: left 
+}
+
+td {
+    padding-left: 18px;
+    padding-right: 18px;
+    border: 2px;
+    border-style: dotted;
+}
+
+th {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-weight: bold;
+    border: 2px;
+    border-style: solid;
+}
+
+tr {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+footer {
+    background-color: aliceblue;
+    color: green;
+    font-family: sans-serif;
+    font-size: 30px; 
+    width: 50%;
+
+    position: relative;
+    top: 60px;
+}
+
+#miasta {
+    position: relative;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 300px;
+}
+
+#odlot {
+    background-color: dodgerblue;
+    width: 45%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+}
+
+#odlot-img {
+    width: 50%;
+}
+
+#przylot {
+    background-color: dodgerblue;
+    width: 45%;
+    height: 300px;
+    position: absolute;
+    right:0;
+}
+
+#przylot-img {
+    width: 50%;
+}
+
+#opis {
+    background-color: goldenrod;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    position: relative;
+    top: 50px;
+    text-align: left;
+}
+
+#opis p {
+    padding: 10px;
+}
+
+#samolot-img {
+    width: 40%;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
