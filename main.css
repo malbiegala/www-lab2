@@ -1,13 +1,135 @@
+@media (min-width: 1400px) {
+    body {
+      width: 1400px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        display: grid;
+        grid-template-columns: 200px 3fr 1fr;
+        grid-template-rows: 1fr 4fr 3fr 1fr;
+        grid-template-areas: 
+          "header header header"
+          "menu main sidebar"
+          "menu main form"
+          "footer footer footer";
+        grid-column-gap: 15px;
+    }
+}
+
+@media (max-width: 1025px) and (min-width: 800px){
+    .container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
+        grid-template-areas: 
+          "header header"
+          "menu sidebar"
+          "main sidebar"
+          "main form"
+          "footer footer";
+        grid-column-gap: 15px;
+    }
+}
+
+@media (max-width: 800px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 4fr 3fr 4fr 1fr;
+        grid-template-areas: 
+          "header"
+          "menu"
+          "sidebar"
+          "form"
+          "main"
+          "footer";
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #super {
+        display: none;
+    }
+}
+
 body {
-    text-align: center
+    text-align: center;
+    position: relative;
 }
 
 #logo {
-    display: block;
+    /*display: block;*/
     width: 100px;
     position: absolute;
     top: 10px;
-    left: 1200px;
+    right: 20px;
+}
+
+#Głowa {
+    grid-area: header;
+    background-color:  #024f83;
+}
+
+#Menu {
+    grid-area: menu;
+    background-color: #176396;
+}
+
+#Zawartość {
+    grid-area: main;
+    background-color: #0d91e9;
+}
+
+#Opóźnienia {
+    grid-area: sidebar;
+    background-color: #176396;
+}
+
+#Formularz {
+    grid-area: form;
+    background-color: #03568d;
+}
+
+#Stopka {
+    grid-area: footer;
+    background-color: #024f83;
+}
+
+#Główne_menu {
+    list-style: none;
+    text-align: left;
+    font: menu;
+    text-transform: uppercase;
+}
+
+#Główne_menu :link{
+    text-decoration: none;
+    color: inherit;
+}
+
+#Główne_menu :visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+#Podmenu {
+    list-style: none;
+}
+
+.czerwony {
+    background-color: lightcoral;
+}
+
+.pomarańczowy {
+    background-color: lightsalmon;
+}
+
+.żółty {
+    background-color: yellow;
 }
 
 #pierwszy {
@@ -33,7 +155,7 @@ body {
     width: 200px;
     position: absolute;
     top: 35px;
-    left: 580px;
+    left: 200px;
 }
 
 table {
@@ -65,14 +187,11 @@ tr {
 }
 
 footer {
-    background-color: aliceblue;
-    color: green;
+    color: rgb(1, 37, 54);
     font-family: sans-serif;
     font-size: 30px; 
-    width: 50%;
-
     position: relative;
-    top: 60px;
+    top: 60px;*/
 }
 
 #miasta {
@@ -108,7 +227,7 @@ footer {
 }
 
 #opis {
-    background-color: goldenrod;
+    background-color: yellow;
     width: 80%;
     left: 10%;
     right: 10%;
@@ -121,10 +240,44 @@ footer {
     padding: 10px;
 }
 
+#pasażer {
+    position: relative;
+}
+
+#popup {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: turquoise;
+    border-style: groove;
+}
+
+#pasażer:hover > #popup{
+    display: block;
+}
+
+#opis li:nth-child(odd) {
+    background-color: yellowgreen;
+}
+
 #samolot-img {
     width: 40%;
     display: block;
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+#Okienko {
+    width: 90%;
+    height: 90%;
+    background-color: burlywood;
+    opacity: 80%;
+    border-style: groove;
+    display: block;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    font-size: xx-large;
 }
